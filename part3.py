@@ -8,7 +8,7 @@ c = float(input(''))
 
 def area(a, b, c):
     p = (a + b + c) / 2
-    s = (p * (p - a)(p - b)(p - c)) ** 0.5
+    s = (p * (p - a)*(p - b)*(p - c)) ** 0.5
     print(s)
 
 area(a, b, c)
@@ -29,19 +29,23 @@ s = '''Было просто пасмурно, дуло с севера,
 Если знаешь, как жить - живи
 Ты хотела плыть, как все?
 Так плыви...'''
-words = []
-
+words = s.split()
+list = []
 def function():
-    for word in s:
-        return len(word) < 5
+    for word in words:
+        if len(word) < 5:
+             list.append(word)
+    print(list)
 function()
 
 """Модуль 3 Часть 3 Задание 3"""
 
 num = [56, 9, 11, 2]
-max = []
+max_num = []
 def sum():
-    for i in num:
-        if i > i:
-            max += i
+    while len(num) > 0:
+        max_number = max(num)
+        max_num.append(max_number)
+        num.remove(max_number)
+    print("".join(map(str, max_num)))
 sum()

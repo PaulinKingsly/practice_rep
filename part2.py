@@ -6,6 +6,7 @@ list = []
 for i in l:
     if l.count(i) >= 2:
         list.append(i)
+        print(i)
 print(list)
 
 """Модуль 3 Часть 2 Задание 3"""

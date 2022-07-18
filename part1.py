@@ -10,7 +10,7 @@ print(c)
 
 # """Модуль 3 Часть 1 Задание 2"""
 n = int(input(""))
-while True:
+while n > 0:
         for i in range(n):
             print('For - частный случай цикла while')
             n -= 1
